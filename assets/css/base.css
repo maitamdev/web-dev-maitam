@@ -1,0 +1,36 @@
+/* Global Varible */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700&display=swap');
+:root{
+    --bg-body: #FAFAFC;
+    --color-text: #8a8a8a;
+    --color-btn-cta: #4540E1;
+    --bg-secondary: #F1F1FC;
+    --bg-slight: #D6DAF2;
+    --font-open-sans: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: var(--bg-body);
+    color: var(--color-text);
+    font-family: var(--font-open-sans);
+}
+p{
+    color: var(--color-text);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--color-text);
+}
+.card{
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.icon-star{
+    color: #FCC306;
+}

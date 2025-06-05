@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB_DEV</title>
+    <link rel="icon" href=".\assets\images\favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+    <link rel="stylesheet" href="./assets/bootstrap-5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/fontawesome6/css/brands.css">
+    <link rel="stylesheet" href="./assets/fontawesome6/css/fontawesome.css">
+    <link rel="stylesheet" href="./assets/fontawesome6/css/solid.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive_mobile.css">
+</head>
+
+<body>
+    <header class="h-auto w-auto wow bounceInDown" data-wow-duration="2s">
+        <nav class="navbar navbar-expand-lg pt-0">
+            <div class="container container-sm-100 container-md-100">
+                <div class="row w-100">
+                    <div class="col-md-2 d-xl-none d-lg-none d-md-block col-sm-2 col-2">
+                        <div class="inner-drop h-100 h-sm-50 w-100 pt-2">
+                            <div class="dropdown h-100">
+                                <button class="btn btn-secondary btn-drop h-100 h-sm-50 d-block" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-regular fa-bars fs-4"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Home</a></li>
+                                    <li><a class="dropdown-item" href="#">Courses</a></li>
+                                    <li><a class="dropdown-item" href="#">Mentors</a></li>
+                                    <li><a class="dropdown-item" href="#">About</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-3 col-md-6 col-sm-5 col-3">
+                        <div class="inner-brand h-100 py-lg-1 py-2">
+                            <a href="" class="fs-2 text-dark fw-bolder d-block my-auto">MaiTam_Dev</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 d-xl-block d-lg-block d-md-none d-sm-none d-none">
+                        <div class="inner-list h-100">
+                            <ul
+                                class="d-xl-flex d-lg-flex justify-content-around align-items-center h-100 py-lg-3 py-xl-0">
+                                <li class="w-100 h-100 text-center">
+                                    <a href="" class="d-inline-block text-dark fw-bold my-xl-4 my-lg-2">Home</a>
+                                </li>
+                                <li class="w-100 h-100 text-center">
+                                    <a href="" class="d-inline-block text-dark fw-bold my-xl-4 my-lg-2">Courses</a>
+                                </li class="w-100 h-100">
+                                <li class="w-100 h-100 text-center">
+                                    <a href="" class="d-inline-block text-dark fw-bold my-xl-4 my-lg-2">Mentors</a>
+                                </li>
+                                <li class="w-100 h-100 text-center">
+                                    <a href="" class="d-inline-block text-dark fw-bold my-xl-4 my-lg-2">About</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5 col-7">
+                        <div
+                            class="inner-btn d-xl-flex d-lg-flex d-md-flex d-sm-flex d-flex justify-content-end h-100 pt-3">
+                            <button class="btn btn-sign-in" data-bs-toggle="modal" data-bs-target="#modal-sign-in">
+                                <p class="mb-0 color-btn-sign-in fw-bold">Sign in</p>
+                            </button>
+
+                            <!-- Button Sign up -->
+                            <button class="btn btn-register w-50" data-bs-toggle="modal"
+                                data-bs-target="#modal-register">
+                                <p class="mb-0 text-white">Sign up</p>
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <div class="modal-box">
+            <!-- Modal Sign in -->
+            <div class="modal fade bg-wrap" id="modal-sign-in" tabindex="-1" aria-labelledby="modal-sign-inLabel"
+                aria-hidden="true">
+                <div class="modal-dialog position-absolute top-custom">
+                    <div class="modal-content modal-config">
+                        <div class="modal-header">
+                            <h3 class="modal-title text-center w-75 text-dark" id="modal-sign-inLabel">
+                                Welcome to my page
+                            </h3>
+                            <button type="button" class="btn-close rounded-circle bg-white rounded-thumbnail mx-auto"
+                                data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <form>
+                                    <div class="mb-2">
+                                        <label for="formInputEmail1" class="form-label">Email
+                                            address</label>
+                                        <input type="email" class="form-control" id="formInputEmail1"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="formInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="formInputPassword1">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer px-5">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary w-50">Sign in</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal Sign up-->
+            <div class="modal fade bg-wrap" id="modal-register" tabindex="-1" aria-labelledby="modal-registerLabel"
+                aria-hidden="true">
+                <div class="modal-dialog position-absolute pos-custom">
+                    <div class="modal-content modal-config">
+                        <div class="modal-header">
+                            <h3 class="modal-title text-center w-75 text-dark" id="modal-registerLabel">
+                                Welcome to my
+                                page</h3>
+                            <button type="button" class="btn-close rounded-circle bg-white rounded-thumbnail mx-auto"
+                                data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <form>
+                                    <div class="mb-2">
+                                        <label for="formInputPassword1" class="form-label">Full
+                                            Name</label>
+                                        <input type="password" class="form-control" id="formInputPassword1">
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="formInputPassword1" class="form-label">Your
+                                            Phone</label>
+                                        <input type="password" class="form-control" id="formInputPassword1">
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="formInputEmail1" class="form-label">Email
+                                            address</label>
+                                        <input type="email" class="form-control" id="formInputEmail1"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="formInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="formInputPassword1">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer px-5">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary w-50">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+    <main>
+        <section class="sec-1 my-5 py-5">
+            <div class="container py-xl-5 py-lg-5 py-3">
+                <div class="row">
+                    <div class="col-xl-6 col-sm-12 wow slideInLeft" data-wow-duration="2s">
+                        <div class="inner-wrap">
+                            <div class="inner-content mx-auto text-sm-center text-xl-start text-lg-start text-md-start">
+                                <p class="inner-title text-dark fw-normal w-100 fw-bold d-block"> <span
+                                        class="word-special">Developer & Designer</span>  <span
+                                        class="word-special">By Mai Tâm</span></p>
+                                <p class="inner-desc">Provides you width the lastest online learning system and material
+                                    that help your knowledge growing.</p>
+                            </div>
+
+                            <div
+                                class="inner-btn btn-group w-100 justify-content-sm-around justify-content-lg-start justify-content-md-start mt-3">
+                                <div class="wrap-btn w"><a class="btn btn-custom w-100 text-white h-100 btn-1">Get
+                                        Started</a></div>
+                                <div class="wrap-btn w"><a class="btn btn-custom w-100 h-100 btn-2">Get Free
+                                        Trial</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 mt-xl-0 mt-lg-5 mt-4 wow slideInRight" data-wow-duration="2s">
+                        <div class="inner-img h-100 px-xl-5 px-3">
+                            <img src="./assets/images/sec-3.jpg" alt=""
+                                class="img-fluid rounded-pill my-xl-4 my-0 d-inline-block h-75 w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec-2 my-5 wow bounceInDown py-5" data-wow-duration="1s">
+            <div class="container bg-wrap rounded-3">
+                <div class="row py-4">
+                    <div class="col-xl-4 wow slideInLeft" data-wow-duration="3.5s">
+                        <div
+                            class="inner-item-1 d-flex justify-content-xl-start justify-content-lg-center justify-content-md-center justify-content-center">
+                            <div class="inner-img w-50 text-center">
+                                <img src="./assets/images/sec-1.png" alt="" class="img-fluid w-75 rounded-3">
+                            </div>
+                            <div class="inner-content">
+                                <p class="inner-num fs-1 fw-bold color__num">10k+</p>
+                                <p class="inner-desc fw-normal">TOTAL COURSES</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mt-xl-0 mt-5 wow slideInLeft" data-wow-duration="3s">
+                        <div class="inner-item-1 d-flex justify-content-center">
+                            <div class="inner-img w-50 text-center">
+                                <img src="./assets/images/sec-2.jpg" alt="" class="img-fluid w-75 rounded-3">
+                            </div>
+                            <div class="inner-content">
+                                <p class="inner-num fs-1 fw-bold color__num">10k+</p>
+                                <p class="inner-desc fw-normal">QUALITY</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mt-xl-0 mt-5 wow slideInLeft" data-wow-duration="2s">
+                        <div class="inner-item-1 d-flex justify-content-center">
+                            <div class="inner-img w-50 text-center">
+                                <img src="./assets/images/sec-1.jpg" alt="" class="img-fluid w-75 rounded-3">
+                            </div>
+                            <div class="inner-content">
+                                <p class="inner-num fs-1 fw-bold color__num">10k+</p>
+                                <p class="inner-desc fw-normal">TOTAL COURSES</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec-3">
+            <div class="container">
+                <div class="row row__first wow slideInRight" data-wow-duration="2s">
+                    <div class="col-xl-8 text-lg-center text-xl-start">
+                        <p class="inner-title text-dark">Explore courses by category</p>
+                        <p class="inner-desc fs-5">Browse top class course by browsing our category which will be more
+                            easy for you.</p>
+                    </div>
+                    <div class="col-xl-4 align-items-end d-flex justify-content-end justify-content-lg-center">
+                        <a class="btn btn-primary py-2 btn__config rounded-pill">All Category</a>
+                    </div>
+                </div>
+                <div class="row row__second mt-5 wow slideInLeft" data-wow-duration="2s">
+                    <div class="col-xl-4 mt-xl-0 mt-4 col-lg-6 col-md-6 col-12">
+                        <div class="inner-content d-flex py-3 bg-white rounded-3">
+                            <div class="inner-wrap w-50 px-3 py-2">
+                                <div
+                                    class="inner-icon text-white h-100 rounded-3 d-flex justify-content-center align-items-center">
+                                    <div class="bd-wrap-sec-3 position-relative w-50 h-50">
+                                        <i class="fa-solid fa-pen fs-1 d-block position-absolute"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="inner-text">
+                                <p class="inner-title">Design & Development</p>
+                                <p class="inner-desc">250+ courses available</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mt-xl-0 mt-4 col-lg-6 col-md-6 col-12">
+                        <div class="inner-content d-flex py-3 bg-white rounded-3">
+                            <div class="inner-wrap w-50 px-3 py-2">
+                                <div
+                                    class="inner-icon text-white h-100 rounded-3 d-flex justify-content-center align-items-center">
+                                    <div class="bd-wrap-sec-3 position-relative w-50 h-50">
+                                        <i class="fa-solid fa-pen fs-1 d-block position-absolute"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="inner-text">
+                                <p class="inner-title">Design & Development</p>
+                                <p class="inner-desc">250+ courses available</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mt-xl-0 mt-4 col-lg-6 col-md-6 col-12">
+                        <div class="inner-content d-flex py-3 bg-white rounded-3">
+                            <div class="inner-wrap w-50 px-3 py-2">
+                                <div
+                                    class="inner-icon text-white h-100 rounded-3 d-flex justify-content-center align-items-center">
+                                    <div class="bd-wrap-sec-3 position-relative w-50 h-50">
+                                        <i class="fa-solid fa-pen fs-1 d-block position-absolute"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="inner-text">
+                                <p class="inner-title">Design & Development</p>
+                                <p class="inner-desc">250+ courses available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row__second mt-5 wow slideInLeft" data-wow-duration="2s">
+                    <div class="col-xl-4 mt-xl-0 mt-4 col-lg-6 col-md-6 col-12">
+                        <div class="inner-content d-flex py-3 bg-white rounded-3">
+                            <div class="inner-wrap w-50 px-3 py-2">
+                                <div
+                                    class="inner-icon text-white h-100 rounded-3 d-flex justify-content-center align-items-center">
+                                    <div class="bd-wrap-sec-3 position-relative w-50 h-50">
+                                        <i class="fa-solid fa-pen fs-1 d-block position-absolute"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="inner-text">
+                                <p class="inner-title">Design & Development</p>
+                                <p class="inner-desc">250+ courses available</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mt-xl-0 mt-4 col-lg-6 col-md-6 col-12">
+                        <div class="inner-content d-flex py-3 bg-white rounded-3">
+                            <div class="inner-wrap w-50 px-3 py-2">
+                                <div
+                                    class="inner-icon text-white h-100 rounded-3 d-flex justify-content-center align-items-center">
+                                    <div class="bd-wrap-sec-3 position-relative w-50 h-50">
+                                        <i class="fa-solid fa-pen fs-1 d-block position-absolute"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="inner-text">
+                                <p class="inner-title">Design & Development</p>
+                                <p class="inner-desc">250+ courses available</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mt-xl-0 mt-4 col-lg-6 col-md-6 col-12">
+                        <div class="inner-content d-flex py-3 bg-white rounded-3">
+                            <div class="inner-wrap w-50 px-3 py-2">
+                                <div
+                                    class="inner-icon text-white h-100 rounded-3 d-flex justify-content-center align-items-center">
+                                    <div class="bd-wrap-sec-3 position-relative w-50 h-50">
+                                        <i class="fa-solid fa-pen fs-1 d-block position-absolute"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="inner-text">
+                                <p class="inner-title">Design & Development</p>
+                                <p class="inner-desc">250+ courses available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec-4 bg-sec-4">
+            <div class="container">
+                <div class="row row__first mb-5 wow bounceIn" data-wow-duration="2s">
+                    <div class="col-xl-8 text-lg-center text-xl-start">
+                        <p class="inner-title text-dark">Explore courses by category</p>
+                        <p class="inner-desc fs-5">Browse top class course by browsing our category which will be more
+                            easy for you.</p>
+                    </div>
+                    <div class="col-xl-4 align-items-end d-flex justify-content-end justify-content-lg-center">
+                        <a class="btn btn-primary p-2 btn__config rounded-pill">All Category</a>
+                    </div>
+                </div>
+                <div class="row row__second">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-3 wow slideInRight" data-wow-duration="1s">
+                        <div class="inner-card card">
+                            <img src="./assets/images/sec-1.jpg" alt="" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <div class="categories d-flex mb-3">
+                                    <div class="item p-2 rounded">
+                                        <p class="my-auto">Web Design</p>
+                                    </div>
+                                    <div class="item p-2 rounded">
+                                        <p class="my-auto">Java</p>
+                                    </div>
+                                </div>
+                                <p class="card-text my-4">Learn app development in 30 days.</p>
+                                <div class="info-course mb-3">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-4 col-6 mb-2">
+                                            <div
+                                                class="inner-icon d-flex justify-content-start justify-content-xl-around">
+                                                <div class="wrap-icon w-cus rounded-circle bg-cus text-center p-3">
+                                                    <i class="fa-regular fa-user d-inline-block my-auto m-0 w-icon"
+                                                        style="color: #75BFC9;"></i>
+                                                </div>
+                                                <p class="my-3 mx-2">500k+</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-4 col-6 mb-2">
+                                            <div
+                                                class="inner-icon d-flex justify-content-start justify-content-xl-around">
+                                                <div class="wrap-icon w-cus rounded-circle bg-cus text-center p-3">
+                                                    <i class="fa-solid fa-star d-inline-block m-0  w-icon"
+                                                        style="color: #D8ABA4;"></i>
+                                                </div>
+                                                <p class="my-3 mx-2">4.9</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-4 col-6 mb-2">
+                                            <div
+                                                class="inner-icon d-flex justify-content-start justify-content-xl-around">
+                                                <div class="wrap-icon w-cus rounded-circle bg-cus text-center p-3">
+                                                    <i class="fa-solid fa-dollar-sign d-inline-block m-0  w-icon"
+                                                        style="color: #D8ABA4;"></i>
+                                                </div>
+                                                <p class="my-3 mx-2">$105.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-cta text-end">
+                                    <a href="#" class="btn btn-primary">Enroll Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-3 wow slideInRight" data-wow-duration="2s">
+                        <div class="inner-card card">
+                            <img src="./assets/images/sec-1.jpg" alt="" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <div class="categories d-flex mb-3">
+                                    <div class="item p-2 rounded">
+                                        <p class="my-auto">Web Design</p>
+                                    </div>
+                                    <div class="item p-2 rounded">
+                                        <p class="my-auto">Java</p>
+                                    </div>
+                                </div>
+                                <p class="card-text my-4">Learn app development in 30 days.</p>
+                                <div class="info-course mb-3">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-4 col-6 mb-2">
+                                            <div
+                                                class="inner-icon d-flex justify-content-start justify-content-xl-around">
+                                                <div class="wrap-icon w-cus rounded-circle bg-cus text-center p-3">
+                                                    <i class="fa-regular fa-user d-inline-block my-auto m-0 w-icon"
+                                                        style="color: #75BFC9;"></i>
+                                                </div>
+                                                <p class="my-3 mx-2">500k+</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-4 col-6 mb-2">
+                                            <div
+                                                class="inner-icon d-flex justify-content-start justify-content-xl-around">
+                                                <div class="wrap-icon w-cus rounded-circle bg-cus text-center p-3">
+                                                    <i class="fa-solid fa-star d-inline-block m-0  w-icon"
+                                                        style="color: #D8ABA4;"></i>
+                                                </div>
+                                                <p class="my-3 mx-2">4.9</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-4 col-6 mb-2">
+                                            <div
+                                                class="inner-icon d-flex justify-content-start justify-content-xl-around">
+                                                <div class="wrap-icon w-cus rounded-circle bg-cus text-center p-3">
+                                                    <i class="fa-solid fa-dollar-sign d-inline-block m-0  w-icon"
+                                                        style="color: #D8ABA4;"></i>
+                                                </div>
+                                                <p class="my-3 mx-2">$105.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-cta text-end">
+                                    <a href="#" class="btn btn-primary">Enroll Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-3 wow slideInRight" data-wow-duration="3s">
+                        <div class="inner-card card">
+                            <img src="./assets/images/sec-1.jpg" alt="" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <div class="categories d-flex mb-3">
+                                    <div class="item p-2 rounded">
+                                        <p class="my-auto">Web Design</p>
+                                    </div>
+                                    <div class="item p-2 rounded">
+                                        <p class="my-auto">Java</p>
+                                    </div>
+                                </div>
+                                <p class="card-text my-4">Learn app development in 30 days.</p>
+                                <div class="info-course mb-3">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-4 col-6 mb-2">
+                                            <div
+                                                class="inner-icon d-flex justify-content-start justify-content-xl-around">
+                                                <div class="wrap-icon w-cus rounded-circle bg-cus text-center p-3">
+                                                    <i class="fa-regular fa-user d-inline-block my-auto m-0 w-icon"
+                                                        style="color: #75BFC9;"></i>
+                                                </div>
+                                                <p class="my-3 mx-2">500k+</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-4 col-6 mb-2">
+                                            <div
+                                                class="inner-icon d-flex justify-content-start justify-content-xl-around">
+                                                <div class="wrap-icon w-cus rounded-circle bg-cus text-center p-3">
+                                                    <i class="fa-solid fa-star d-inline-block m-0  w-icon"
+                                                        style="color: #D8ABA4;"></i>
+                                                </div>
+                                                <p class="my-3 mx-2">4.9</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-4 col-6 mb-2">
+                                            <div
+                                                class="inner-icon d-flex justify-content-start justify-content-xl-around">
+                                                <div class="wrap-icon w-cus rounded-circle bg-cus text-center p-3">
+                                                    <i class="fa-solid fa-dollar-sign d-inline-block m-0  w-icon"
+                                                        style="color: #D8ABA4;"></i>
+                                                </div>
+                                                <p class="my-3 mx-2">$105.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-cta text-end">
+                                    <a href="#" class="btn btn-primary">Enroll Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="sec-5 py-5">
+            <div class="container py-5">
+                <div class="row row__first mb-3 wow bounceIn" data-wow-duration="2s">
+                    <div class="col-xl-6 col-12">
+                        <p class="fs-1 fw-bold text-dark">What our student are saying about us</p>
+                    </div>
+                    <div class="col-xl-6 col-12">
+                        <p class="text-secondary">You learn today and earn tomorrow. The roots of education are bitter
+                            but the fruits are sweet. If you learn you can lead tomorrow. See what our students are
+                            saying.</p>
+                    </div>
+                </div>
+                <div class="slider row row__second container-fluid wow bounceIn" data-wow-duration="3s">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 p-2">
+                        <div class="card p-4">
+                            <div class="inner-wrap">
+                                <p class="inner-title text-dark fw-bold fs-5">Great platform</p>
+                                <div class="inner-content d-flex">
+                                    <div class="inner-icon">
+                                        <i class="fa-solid fa-quote-left p-2 rounded-circle bg-icon"></i>
+                                    </div>
+                                    <div class="inner-content mx-3">
+                                        <p class="inner-desc pb-3">Circuit has helped me expand my knowledge through
+                                            several
+                                            important courses that are extreme impactfull and helpfull for my career.
+                                            For the first time, finishing my degree seemed realistic.</p>
+                                        <div class="inner-img d-flex">
+                                            <img src="./assets/images/sec-1.jpg" alt=""
+                                                class="img-fluid rounded-circle w-25 d-inline-block">
+                                            <div class="inner-rate mx-2">
+                                                <p class="name-author fw-bold fs text-dark m-0">Joe Root</p>
+                                                <div class="icon-star">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 p-2">
+                        <div class="card p-4">
+                            <div class="inner-wrap">
+                                <p class="inner-title text-dark fw-bold fs-5">Great platform</p>
+                                <div class="inner-content d-flex">
+                                    <div class="inner-icon">
+                                        <i class="fa-solid fa-quote-left p-2 rounded-circle bg-icon"></i>
+                                    </div>
+                                    <div class="inner-content mx-3">
+                                        <p class="inner-desc pb-3">Circuit has helped me expand my knowledge through
+                                            several
+                                            important courses that are extreme impactfull and helpfull for my career.
+                                            For the first time, finishing my degree seemed realistic.</p>
+                                        <div class="inner-img d-flex">
+                                            <img src="./assets/images/sec-1.jpg" alt=""
+                                                class="img-fluid rounded-circle w-25 d-inline-block">
+                                            <div class="inner-rate mx-2">
+                                                <p class="name-author fw-bold fs text-dark m-0">Joe Root</p>
+                                                <div class="icon-star">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 p-2">
+                        <div class="card p-4">
+                            <div class="inner-wrap">
+                                <p class="inner-title text-dark fw-bold fs-5">Great platform</p>
+                                <div class="inner-content d-flex">
+                                    <div class="inner-icon">
+                                        <i class="fa-solid fa-quote-left p-2 rounded-circle bg-icon"></i>
+                                    </div>
+                                    <div class="inner-content mx-3">
+                                        <p class="inner-desc pb-3">Circuit has helped me expand my knowledge through
+                                            several
+                                            important courses that are extreme impactfull and helpfull for my career.
+                                            For the first time, finishing my degree seemed realistic.</p>
+                                        <div class="inner-img d-flex">
+                                            <img src="./assets/images/sec-1.jpg" alt=""
+                                                class="img-fluid rounded-circle w-25 d-inline-block">
+                                            <div class="inner-rate mx-2">
+                                                <p class="name-author fw-bold fs text-dark m-0">Joe Root</p>
+                                                <div class="icon-star">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 p-2">
+                        <div class="card p-4">
+                            <div class="inner-wrap">
+                                <p class="inner-title text-dark fw-bold fs-5">Great platform</p>
+                                <div class="inner-content d-flex">
+                                    <div class="inner-icon">
+                                        <i class="fa-solid fa-quote-left p-2 rounded-circle bg-icon"></i>
+                                    </div>
+                                    <div class="inner-content mx-3">
+                                        <p class="inner-desc pb-3">Circuit has helped me expand my knowledge through
+                                            several
+                                            important courses that are extreme impactfull and helpfull for my career.
+                                            For the first time, finishing my degree seemed realistic.</p>
+                                        <div class="inner-img d-flex">
+                                            <img src="./assets/images/sec-1.jpg" alt=""
+                                                class="img-fluid rounded-circle w-25 d-inline-block">
+                                            <div class="inner-rate mx-2">
+                                                <p class="name-author fw-bold fs text-dark m-0">Joe Root</p>
+                                                <div class="icon-star">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 p-2">
+                        <div class="card p-4">
+                            <div class="inner-wrap">
+                                <p class="inner-title text-dark fw-bold fs-5">Great platform</p>
+                                <div class="inner-content d-flex">
+                                    <div class="inner-icon">
+                                        <i class="fa-solid fa-quote-left p-2 rounded-circle bg-icon"></i>
+                                    </div>
+                                    <div class="inner-content mx-3">
+                                        <p class="inner-desc pb-3">Circuit has helped me expand my knowledge through
+                                            several
+                                            important courses that are extreme impactfull and helpfull for my career.
+                                            For the first time, finishing my degree seemed realistic.</p>
+                                        <div class="inner-img d-flex">
+                                            <img src="./assets/images/sec-1.jpg" alt=""
+                                                class="img-fluid rounded-circle w-25 d-inline-block">
+                                            <div class="inner-rate mx-2">
+                                                <p class="name-author fw-bold fs text-dark m-0">Joe Root</p>
+                                                <div class="icon-star">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec-6">
+            <div class="container pb-5">
+                <div class="inner-wrap">
+                    <div class="inner-head text-center wow slideInLeft" data-wow-duration="2s">
+                        <p class="inner-title fs-2 fw-bolder text-dark">Subscribe Now</p>
+                        <p class="inner-desc w-75 mx-auto">You learn today and earn tomorrow. The roots of education are
+                            bitter but the fruits are sweet.</p>
+                    </div>
+                    <div class="inner-body py-4 h-input wow bounceInUp" data-wow-duration="1.5s">
+                        <form class="inner-input w-50 d-flex mx-auto position-relative shadow">
+                            <input type="text" name="" id="" class="form-control rounded-3"
+                                placeholder="Enter your email">
+                            <a href="#" class="btn-primary btn position-absolute">Subscribe</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="first-part border-cus">
+            <div class="container py-3">
+                <div class="row row__first py-5">
+                    <div class="col-xl-5 col-12 wow slideInLeft" data-wow-duration="1.5s">
+                        <div class="inner-wrap">
+                            <p class="inner-title">K_Lop</p>
+                            <p class="inner-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint autem
+                                accusantium
+                                laudantium deleniti.</p>
+                            <div class="inner-icon">
+                                <a href=""><i class="fa-solid "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-1 fixed d-none d-xl-block"></div>
+                    <div class="col-xl-2 mb-3 col-lg-6 col-md-6 col-sm-6 col-12 wow bounceInDown" data-wow-duration="3s">
+                        <div class="inner-wrap">
+                            <p class="inner-title mb-2">Links</p>
+                            <a href="" class="d-block">Home</a>
+                            <a href="" class="d-block">About Us</a>
+                            <a href="" class="d-block">Our Process</a>
+                            <a href="" class="d-block">Services</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 mb-3 col-lg-6 col-md-6 col-sm-6 col-12 wow bounceInDown" data-wow-duration="4.5s">
+                        <div class="inner-wrap">
+                            <p class="inner-title mb-2">Community</p>
+                            <a href="" class="d-block">Go Premium</a>
+                            <a href="" class="d-block">Team Plane</a>
+                            <a href="" class="d-block">Refer a Friend</a>
+                            <a href="" class="d-block">Gift Cards</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 mb-3 col-lg-6 col-md-6 col-sm-6 col-12 wow slideInRight" data-wow-duration="4s">
+                        <div class="inner-wrap">
+                            <p class="inner-title mb-2">Resources</p>
+                            <a href="" class="d-block">Support</a>
+                            <a href="" class="d-block">Lasted Updates</a>
+                            <a href="" class="d-block">Updates News</a>
+                            <a href="" class="d-block">Flow Management</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second-part py-3">
+            <div class="container">
+                <div class="inner-wrap d-flex justify-content-between align-items-center wow fadeInLeft" data-wow-duration="2s">
+                    <p class="m-0 fw-bolder">Copyright Ki_Lop 2023, All right Reserved</p>
+                    <i class="fa-solid fa-arrow-alt-circle-up btn"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/effect.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        $('.slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 760,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                },
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
+</body>
+
+</html>

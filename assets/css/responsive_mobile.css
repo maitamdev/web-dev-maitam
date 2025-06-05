@@ -1,0 +1,24 @@
+@media screen and (max-width: 380px) {
+    header .btn-drop{
+    }
+    header .inner-brand a{
+        font-size: 17.6px !important;
+        padding-top: 15px;
+    }
+    .sec-1 .inner-wrap .inner-title{
+        font-size: 40px;
+    }
+    .sec-1 .btn-custom{
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    .sec-1 .btn-2{
+        width: 120px !important;
+    }
+    .sec-6 .inner-input{
+        width: 75% !important;
+    }
+    footer .m-0.fw-bolder{
+        font-size: 15px;
+    }
+}
