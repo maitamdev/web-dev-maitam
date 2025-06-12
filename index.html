@@ -72,100 +72,106 @@
                             </button>
 
                             <!-- Button Sign up -->
-                            <button class="btn btn-register w-50" data-bs-toggle="modal"
-                                data-bs-target="#modal-register">
-                                <p class="mb-0 text-white">Sign up</p>
-                            </button>
+<button class="btn btn-register w-50" data-bs-toggle="modal" data-bs-target="#modal-register">
+    <p class="mb-0 text-white">Sign up</p>
+</button>
 
-                        </div>
-                    </div>
+</div>
+</div>
 
+</div>
+</div>
+</nav>
+<div class="modal-box">
+    <!-- Modal Sign in -->
+    <div class="modal fade bg-wrap" id="modal-sign-in" tabindex="-1" aria-labelledby="modal-sign-inLabel" aria-hidden="true">
+        <div class="modal-dialog position-absolute top-custom">
+            <div class="modal-content modal-config">
+                <div class="modal-header">
+                    <h3 class="modal-title text-center w-75 text-dark" id="modal-sign-inLabel">Welcome to my page</h3>
+                    <button type="button" class="btn-close rounded-circle bg-white rounded-thumbnail mx-auto"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            </div>
-        </nav>
-        <div class="modal-box">
-            <!-- Modal Sign in -->
-            <div class="modal fade bg-wrap" id="modal-sign-in" tabindex="-1" aria-labelledby="modal-sign-inLabel"
-                aria-hidden="true">
-                <div class="modal-dialog position-absolute top-custom">
-                    <div class="modal-content modal-config">
-                        <div class="modal-header">
-                            <h3 class="modal-title text-center w-75 text-dark" id="modal-sign-inLabel">
-                                Welcome to my page
-                            </h3>
-                            <button type="button" class="btn-close rounded-circle bg-white rounded-thumbnail mx-auto"
-                                data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <form>
-                                    <div class="mb-2">
-                                        <label for="formInputEmail1" class="form-label">Email
-                                            address</label>
-                                        <input type="email" class="form-control" id="formInputEmail1"
-                                            aria-describedby="emailHelp">
-                                    </div>
-                                    <div class="mb-2">
-                                        <label for="formInputPassword1" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="formInputPassword1">
-                                    </div>
-                                </form>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="mb-2">
+                                <label for="loginEmail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="loginEmail" required>
                             </div>
-                        </div>
-                        <div class="modal-footer px-5">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary w-50">Sign in</button>
-                        </div>
+                            <div class="mb-2">
+                                <label for="loginPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="loginPassword" required>
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </div>
-            <!-- Modal Sign up-->
-            <div class="modal fade bg-wrap" id="modal-register" tabindex="-1" aria-labelledby="modal-registerLabel"
-                aria-hidden="true">
-                <div class="modal-dialog position-absolute pos-custom">
-                    <div class="modal-content modal-config">
-                        <div class="modal-header">
-                            <h3 class="modal-title text-center w-75 text-dark" id="modal-registerLabel">
-                                Welcome to my
-                                page</h3>
-                            <button type="button" class="btn-close rounded-circle bg-white rounded-thumbnail mx-auto"
-                                data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <form>
-                                    <div class="mb-2">
-                                        <label for="formInputPassword1" class="form-label">Full
-                                            Name</label>
-                                        <input type="password" class="form-control" id="formInputPassword1">
-                                    </div>
-                                    <div class="mb-2">
-                                        <label for="formInputPassword1" class="form-label">Your
-                                            Phone</label>
-                                        <input type="password" class="form-control" id="formInputPassword1">
-                                    </div>
-                                    <div class="mb-2">
-                                        <label for="formInputEmail1" class="form-label">Email
-                                            address</label>
-                                        <input type="email" class="form-control" id="formInputEmail1"
-                                            aria-describedby="emailHelp">
-                                    </div>
-                                    <div class="mb-2">
-                                        <label for="formInputPassword1" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="formInputPassword1">
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="modal-footer px-5">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary w-50">Sign up</button>
-                        </div>
-                    </div>
+                <div class="modal-footer px-5">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary w-50" id="signInSubmit">Sign in</button>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+    
+
+    <!-- Modal Sign up -->
+    <div class="modal fade bg-wrap" id="modal-register" tabindex="-1" aria-labelledby="modal-registerLabel" aria-hidden="true">
+        <div class="modal-dialog position-absolute pos-custom">
+            <div class="modal-content modal-config">
+                <div class="modal-header">
+                    <h3 class="modal-title text-center w-75 text-dark" id="modal-registerLabel">Welcome to my page</h3>
+                    <button type="button" class="btn-close rounded-circle bg-white rounded-thumbnail mx-auto"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="mb-2">
+                                <label for="signupFullname" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="signupFullname" required>
+                            </div>
+                            <div class="mb-2">
+                                <label for="signupPhone" class="form-label">Your Phone</label>
+                                <input type="text" class="form-control" id="signupPhone" required>
+                            </div>
+                            <div class="mb-2">
+                                <label for="signupEmail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="signupEmail" required>
+                            </div>
+                            <div class="mb-2">
+                                <label for="signupPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="signupPassword" required>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer px-5">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary w-50" id="signUpSubmit">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="otpModal" tabindex="-1" aria-labelledby="otpModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="otpModalLabel">Nhập mã OTP</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+      </div>
+      <div class="modal-body">
+        <input type="text" id="otpInput" class="form-control" placeholder="Nhập mã OTP">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+        <button type="button" class="btn btn-primary" id="confirmOtpBtn">Xác nhận</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     <!-- End Header -->
     <main>
         <section class="sec-1 my-5 py-5">
@@ -828,12 +834,111 @@
                         slidesToScroll: 1,
                     }
                 },
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
+                
             ]
         });
     </script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const innerBtn = document.querySelector(".inner-btn");
+    const logoutTemplate = `
+        <div class="d-flex justify-content-end align-items-center gap-3">
+            <span class="fw-bold my-auto">Xin chào, Admin</span>
+            <button class="btn btn-danger" id="logoutBtn">Logout</button>
+        </div>
+    `;
+
+    function showLoggedIn() {
+        if (innerBtn) {
+            innerBtn.innerHTML = logoutTemplate;
+            document.getElementById("logoutBtn").addEventListener("click", function () {
+                localStorage.removeItem("isLoggedIn");
+                location.reload();
+            });
+        }
+    }
+
+    const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+    if (isLoggedIn) {
+        showLoggedIn();
+    } else {
+        const loginBtn = document.getElementById("signInSubmit");
+        if (loginBtn) {
+            loginBtn.addEventListener("click", function () {
+                const email = document.getElementById("loginEmail").value;
+                const password = document.getElementById("loginPassword").value;
+
+                const savedEmail = localStorage.getItem("accountEmail");
+                const savedPassword = localStorage.getItem("accountPassword");
+
+                if (email === savedEmail && password === savedPassword) {
+                    alert("Đăng nhập thành công!");
+                    localStorage.setItem("isLoggedIn", "true");
+                    location.reload();
+                } else {
+                    alert("Sai email hoặc mật khẩu!");
+                }
+            });
+        }
+
+        const signupBtn = document.getElementById("signUpSubmit");
+        const confirmOtpBtn = document.getElementById("confirmOtpBtn");
+
+        if (signupBtn) {
+            signupBtn.addEventListener("click", async function () {
+                const email = document.getElementById("signupEmail").value;
+                const password = document.getElementById("signupPassword").value;
+
+                if (email && password) {
+                    const res = await fetch("http://localhost:3000/send-otp", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ email })
+                    });
+
+                    if (!res.ok) {
+                        alert("Không gửi được OTP.");
+                        return;
+                    }
+
+                    window.pendingSignup = { email, password };
+                    const otpModal = new bootstrap.Modal(document.getElementById("otpModal"));
+                    otpModal.show();
+                } else {
+                    alert("Vui lòng nhập đủ thông tin!");
+                }
+            });
+        }
+
+        if (confirmOtpBtn) {
+            confirmOtpBtn.addEventListener("click", async function () {
+                const otp = document.getElementById("otpInput").value;
+                if (!otp || !window.pendingSignup) return alert("Vui lòng nhập mã OTP!");
+
+                const res = await fetch("http://localhost:3000/verify-otp", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ otp })
+                });
+
+                const data = await res.json();
+                if (data.success) {
+                    const { email, password } = window.pendingSignup;
+                    localStorage.setItem("accountEmail", email);
+                    localStorage.setItem("accountPassword", password);
+                    localStorage.setItem("isLoggedIn", "true");
+
+                    alert("Đăng ký thành công!");
+                    location.reload();
+                } else {
+                    alert("Sai mã OTP!");
+                }
+            });
+        }
+    }
+});
+</script>
+
 </body>
 
 </html>

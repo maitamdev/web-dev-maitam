@@ -214,3 +214,27 @@ footer .second-part i{
     background-color: var(--color-btn-cta);
     color: var(--bg-body);
 }
+@media (max-width: 768px) {
+  .inner-btn {
+    justify-content: center !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+  }
+
+  .btn-sign-in,
+  .btn-register {
+    width: 80% !important;
+  }
+
+  .inner-brand a {
+    font-size: 20px !important;
+    text-align: center;
+    display: block;
+  }
+
+  .inner-list {
+    display: none !important; /* Ẩn menu ngang khi xuống mobile */
+  }
+}
